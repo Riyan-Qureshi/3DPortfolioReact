@@ -12,6 +12,8 @@ import ReactLogo from '../components/ReactLogo.jsx'
 import PokeBall from '../components/PokeBall.jsx'
 import Cube from '../components/Cube.jsx'
 import Rings from '../components/Rings.jsx'
+import HeroCamera from '../components/HeroCamera.jsx'
+import Button from '../components/Button.jsx'
 
 const Hero = () => {
     // Creating a control panel with sliders using Leva to adjust 3D properties like rotation, size, and position 
@@ -79,16 +81,18 @@ const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
                     <PerspectiveCamera makeDefault position={[0,0,30]}/>
                     
-                    <HackerRoom 
-                        scale={sizes.deskScale}
-                        position={sizes.deskPosition}
-                        rotation={[0, -Math.PI, 0]}
+                    <HeroCamera isMobile={isMobile}>
+                        <HackerRoom 
+                            scale={sizes.deskScale}
+                            position={sizes.deskPosition}
+                            rotation={[0, -Math.PI, 0]}
 
-                        // Leva Object Orientation Controls
-                        // position={[controls.positionX, controls.positionY, controls.positionZ]}
-                        // rotation={[controls.rotationX, controls.rotationY, controls.rotationZ]}
-                        // scale={[controls.scale, controls.scale, controls.scale]}
-                    />
+                            // Leva Object Orientation Controls
+                            // position={[controls.positionX, controls.positionY, controls.positionZ]}
+                            // rotation={[controls.rotationX, controls.rotationY, controls.rotationZ]}
+                            // scale={[controls.scale, controls.scale, controls.scale]}
+                        />
+                    </HeroCamera>
 
                     <group>
                         <Target position={sizes.targetPosition}/>
@@ -102,6 +106,13 @@ const sizes = calculateSizes(isSmall, isMobile, isTablet);
                     <directionalLight position={[10,10,10]} intensity={0.5} color={0xF0F0F0}/>
                 </Suspense>
             </Canvas>
+        </div>
+
+        {/* Absolute tag allows button to be visible above Canvas */}
+        <div className='absolute bottom-7 left-0 right-0 w-full z-10 c-space'>
+            <a href='#contact' className='w-fit'>
+                <Button name={"Let's work together!"} isBeam containerClass={"sm:w-fit w-full sm:min-w-96"}></Button>
+            </a>
         </div>
     </section>
   )

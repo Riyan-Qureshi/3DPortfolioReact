@@ -35,7 +35,7 @@ const PokeBall = (props) => {
   return (
     <group {...props} ref={pokeRef} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
-        <group scale={1}>
+        <group scale={0.8}>
           <mesh
             castShadow
             receiveShadow

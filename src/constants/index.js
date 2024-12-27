@@ -248,13 +248,13 @@ export const navLinks = [
   
   export const calculateSizes = (isSmall, isMobile, isTablet) => {
     return {
-      deskScale: isSmall ? 0.07 : isMobile ? 0.08 : 0.1,
-      deskPosition: isMobile ? [0.5, -6.5, 0] : [0.8, -9, 0],
-      cubePosition: isSmall ? [4, -5, 0] : isMobile ? [9, -1, 0] : isTablet ? [15, -3, 0] : [15, -3.5, 0],
-      pokePosition: isSmall ? [4, -5, 0] : isMobile ? [8, -7, 0] : isTablet ? [12, -10, 0] : [12, -10, 0],
-      reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [8, 4, 0] : isTablet ? [12, 4, 0] : [12, 3, 0],
-      ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-17, 8, 0] : isTablet ? [-23, 10, 0] : [-24, 10, 0],
-      targetPosition: isSmall ? [-5, -8, -10] : isMobile ? [-12, -9, -10] : isTablet ? [-15, -16, -10] : [-17, -16, -10],
+      deskScale: isSmall ? 0.07 : isMobile ? 0.06 : 0.07,
+      deskPosition: isMobile ? [0.5, -4.5, 0] : [0.8, -7, 0],
+      cubePosition: isSmall ? [4, -5, 0] : isMobile ? [6, -1, 0] : isTablet ? [15, -3, 0] : [15, -3.5, 0],
+      pokePosition: isSmall ? [4, -5, 0] : isMobile ? [6, -6, 0] : isTablet ? [12, -10, 0] : [12, -10, 0],
+      reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [12, 4, 0] : [12, 3, 0],
+      ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-11, 8, 0] : isTablet ? [-23, 10, 0] : [-24, 10, 0],
+      targetPosition: isSmall ? [-5, -8, -10] : isMobile ? [-9, -9, -10] : isTablet ? [-15, -16, -10] : [-17, -16, -10],
     };
   };
   
