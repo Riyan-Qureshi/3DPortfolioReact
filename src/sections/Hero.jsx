@@ -1,10 +1,10 @@
 /* eslint-disable react/no-unknown-property */
 import { PerspectiveCamera } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
-import React, { Suspense } from 'react'
+import { Suspense } from 'react'
 import HackerRoom from '../components/HackerRoom'
 import CanvasLoader from '../components/CanvasLoader'
-import { Leva, useControls } from 'leva'
+// import { Leva, useControls } from 'leva'
 import { useMediaQuery } from 'react-responsive'
 import { calculateSizes } from '../constants'
 import Target from '../components/Target.jsx'
