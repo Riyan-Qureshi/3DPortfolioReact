@@ -1,9 +1,10 @@
-import { Suspense, useRef, useState } from 'react'
+import { Suspense, useState } from 'react'
 import { myProjects } from '../constants'
 import { Canvas } from '@react-three/fiber';
 import DemoComputer from '../components/DemoComputer';
 import { Center, OrbitControls } from '@react-three/drei';
 import CanvasLoader from '../components/CanvasLoader';
+import resume from '/assets/CurrentRiyanQureshiResume.pdf'
 
 const projectCount = myProjects.length;
 
@@ -25,7 +26,10 @@ const Projects = () => {
     return (
         <section className='c-space my-20' id='projects'>
             <p className='head-text'>My Work</p>
-
+            <a className="flex items-center gap-2 cursor-pointer text-white-600" href={resume} download={'CurrentRiyanQureshiResume'}>
+                <p className='animatedText text-white-600'> Check out my Resume!</p>
+                <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
+            </a>
             <div className='grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full'>
                  <div className='flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200'>
                     <div className="absolute top-0 right-0">
