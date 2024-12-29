@@ -11,7 +11,7 @@ const About = () => {
     }
 
     return (
-        <section className='c-space my-20'>
+        <section className='c-space my-20' id='about'>
             <div className='grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full'>
                 {/* About Me Card */}
                 <div className='col-span-1 xl:row-span-3'>
@@ -62,9 +62,11 @@ const About = () => {
                         />
                         </div>
                         <div>
-                        <p className="grid-headtext">I’m very flexible with various time zone communications & locations</p>
-                        <p className="grid-subtext">I am based in Fremont, California, but I am open to work remotely worldwide.</p>
-                        <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+                            <p className="grid-headtext">I’m very flexible with various time zone communications & locations</p>
+                            <p className="grid-subtext">I am based in Fremont, California, but I am open to work remotely worldwide.</p>
+                            <a href='#contact' className='w-fit'>
+                                <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+                            </a>
                         </div>
                     </div>
                 </div>

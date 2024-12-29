@@ -3,6 +3,7 @@ import Navbar from './sections/Navbar'
 import Hero from './sections/Hero'
 import About from './sections/About'
 import Projects from './sections/Projects'
+import Testimonials from './sections/Testimonials'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Hero/>
       <About/>
       <Projects/>
+      {/* <Testimonials/> */}
     </main>
   )
 }
