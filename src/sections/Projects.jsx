@@ -1,5 +1,9 @@
-import React, { useState } from 'react'
+import { Suspense, useRef, useState } from 'react'
 import { myProjects } from '../constants'
+import { Canvas } from '@react-three/fiber';
+import DemoComputer from '../components/DemoComputer';
+import { Center, OrbitControls } from '@react-three/drei';
+import CanvasLoader from '../components/CanvasLoader';
 
 const projectCount = myProjects.length;
 
@@ -69,8 +73,22 @@ const Projects = () => {
                             <img src="/assets/right-arrow.png" alt="right arrow" className="w-4 h-4" />
                         </button>
                     </div>
-
                  </div>
+
+                <div className='border border-black-300 bg-black-200 rounded-lg h-96 md:h-full '>
+                    <Canvas>
+                        <ambientLight intensity={1}/>
+                        <directionalLight intensity={2} position={[0,30,0]} color={0xffffff}/>
+                        <Center>
+                            <Suspense fallback={<CanvasLoader/>}>
+                                <group scale={7} position={[0,0,0]} rotation={[0,0,0]}>
+                                    <DemoComputer texture={currentProject.texture}/>
+                                </group>
+                            </Suspense>
+                        </Center>
+                        <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false}/>
+                    </Canvas>
+                </div>
             </div>
         </section>
     )
