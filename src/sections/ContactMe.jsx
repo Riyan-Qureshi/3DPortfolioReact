@@ -66,7 +66,7 @@ const ContactMe = () => {
                                 onChange={handleChange}
                                 required
                                 className='field-input'
-                                placeholder='Tom Jerry'
+                                placeholder='John Wick'
                             />
                         </label>
 
