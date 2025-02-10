@@ -90,10 +90,10 @@ export const myProjects = [
   },
   {
     title: 'Flexy: Yoga & Stretching',
-    desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
+    desc: 'Flexy is an ads-free yoga and stretching app that empowers users to improve their mobility and flexibility while reducing any muscle aches and pains. It features sets of timed yoga poses and stretches that target specific pain points, with an autoplay feature for hands-free operation, and video demonstrations to aid in understanding each exercise.',
     subdesc:
-      'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-    href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
+      'Built with React-Native, Expo, TailwindCSS, and Typescript, Flexy combines industry standard technology to provide an easy to use health improvement app.',
+    href: 'https://github.com/Riyan-Qureshi/react_native_flexy',
     texture: '/textures/project/project5.mp4',
     logo: '/assets/flexy-logo.png',
     logoStyle: {
