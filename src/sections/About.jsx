@@ -19,7 +19,7 @@ const About = () => {
                         <img src='/assets/grid1.png' alt='grid-1' className='w-full sm:h-[276px] h-fit object-contain'/>
                         <div>
                             <p className='grid-headtext'>Hi, I am Riyan Qureshi</p>
-                            <p className='grid-subtext'>With 3 years of university computer science experience and 6 years of personal software development experience I have honed my skills in both frontend and backend development, becoming a fullstack developer that can be an asset to all! </p>
+                            <p className='grid-subtext'>Junior Computer Engineering student at SJSU passionate about building thoughtful, user-focused software at the intersection of technology, design, and impact. </p>
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,7 @@ const About = () => {
                         <img src='/assets/grid2.png' alt='grid-2' className='w-full sm:w-[276px] h-fit object-contain'/>
                         <div>
                         <p className='grid-headtext'> Tech Stack </p>
-                        <p className='grid-subtext'> I specialize in Javascript / Typescript with a focus on React with Tailwind</p>
+                        <p className='grid-subtext'> I specialize in mobile-first development using React Native and Expo, and also work across the full stack with tools like Node.js, Python, and Firebase to build responsive, cloud-connected apps.</p>
                     </div>
                     </div>
                 </div>
@@ -79,8 +79,7 @@ const About = () => {
                         <div>
                         <p className="grid-headtext">My Passion for Coding</p>
                         <p className="grid-subtext">
-                            I love solving problems and building things through code. Programming isn&apos;t just my
-                            profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
+                        I’m passionate about coding because it lets me turn ideas into interactive experiences, solve meaningful problems, and continuously learn by building things that make a real impact.
                         </p>
                         </div>
                     </div>

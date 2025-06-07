@@ -62,7 +62,7 @@ export const myProjects = [
     desc: "Developed an interactive recipe app using a React-Native frontend with TypeScript and Expo that is fully dynamic with custom animations, styles, and multi-screen, stack navigation using React Native Reanimated, NativeWind, and React Navigation.",
     subdesc: "Features API-fetched, categorized recipes with an image caching optimization for faster load times, and a YouTube mini-player accessibility feature for hands-off video instructions.",
     href: 'https://github.com/Riyan-Qureshi/RecipeApp',
-    texture: '/textures/project/project1.mp4',
+    texture: '/textures/project/bageliciousAppPreview.png',
     logo: '/assets/bagMin2.png',
     logoStyle: {
       backgroundColor: '#2A1816',
@@ -94,7 +94,7 @@ export const myProjects = [
     subdesc:
       'Built with React-Native, Expo, TailwindCSS, and Typescript, Flexy combines industry standard technology to provide an easy to use health improvement app.',
     href: 'https://github.com/Riyan-Qureshi/react_native_flexy',
-    texture: '/textures/project/project5.mp4',
+    texture: '/textures/project/flexyAppPreviewPhoto.png',
     logo: '/assets/flexy-logo.png',
     logoStyle: {
       backgroundColor: '#1C1A43',

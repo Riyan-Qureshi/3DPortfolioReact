@@ -14,8 +14,8 @@ import { useEffect, useRef } from 'react';
 const DemoComputer = (props) => {
   const group = useRef();
   const { nodes, materials } = useGLTF('/models/desktop_computer.glb')
-  const txt = useVideoTexture(props.texture ? props.texture : '/textures/project/project1.mp4');
-//   const txt2 = useTexture('/textures/cube.png');
+  // const txt = useVideoTexture(props.texture ? props.texture : '/textures/project/project1.mp4');
+  const txt = useTexture(props.texture ? props.texture : '/textures/project/blueScreenOfDeath.png');
   const mousePos = [-0.1,0,0.2];
   const mouseScale = 0.8;
   
